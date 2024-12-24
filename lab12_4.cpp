@@ -1,6 +1,8 @@
 #include<iostream>
-
 using namespace std;
+
+template <typename kak>
+void mySwap(kak&,kak&);
 
 int main(){
 	int x, y;
@@ -30,3 +32,11 @@ int main(){
 	return 0;
 }
 
+template <typename kak>
+void mySwap(kak &x,kak &y){
+    kak y2 = x;
+    kak x2 = y;
+    x = x2;
+    y = y2;
+    
+}
